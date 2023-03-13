@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
-function NavBar() {
-  return (
-    <nav>
-      
-    </nav>
+const NavBar = () => {
+  return(
+    <div></div>
   )
 }
 
