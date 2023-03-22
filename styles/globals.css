@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,9 +13,8 @@
 }
 
 body {
-  background-color: #1b1b1b;
+  background-color: #101010;
   color: white;
-  
 }
 
 .blur-circle-1 {
@@ -49,4 +49,8 @@ body {
   background: rgba(27, 197, 234, 0.52);
   filter: blur(139px);
   z-index: -60;
+}
+
+.white-text-shadow{
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.40);
 }

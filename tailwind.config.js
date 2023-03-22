@@ -10,10 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       fontFamily:{
-        sans: 'Montserrat',
+        sans: 'Open Sans',
         RobotoMono: 'Roboto Mono',
-      }
+      },
+
+      dropShadow: {
+        'WhiteShadow' : '0px 0px 10px rgba(255, 255, 255, 1);',
+      },
     },
   },
   plugins: [],
