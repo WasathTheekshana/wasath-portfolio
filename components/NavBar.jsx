@@ -4,7 +4,7 @@ import Link from "next/link";
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute flex flex-col justify-center top-0 left-0 h-screen w-screen bg-black/20 backdrop-blur-xl transform ${
+      className={`absolute z-10 flex flex-col justify-center top-0 left-0 h-screen w-screen bg-black/20 backdrop-blur-xl transform ${
         open ? "-translate-y-0" : "-translate-y-full"
       } transition-transform duration-300 ease-in-out filter`}
     >

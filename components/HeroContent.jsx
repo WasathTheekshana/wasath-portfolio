@@ -36,7 +36,7 @@ function HeroContent() {
           </h1>
         </div>
 
-        <div className="opacity-75">
+        <div className="opacity-75 relative ">
             <button onClick={() => {downloadFile(PDF_FILE_URL)}} className="hover:glow hover:bg-white hover:text-black transition duration-500 text-xs md:text-base font-medium font mt-6 md:mt-10 bg-transparent border rounded-lg py-3 px-6">
               Download CV
             </button>
