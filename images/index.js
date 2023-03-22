@@ -1,10 +1,7 @@
 import Landing from '@/components/Landing'
 import Head from 'next/head'
 import Image from 'next/image'
-import circle1 from '@/images/Ellipse 1.png'
-import circle2 from '@/images/Ellipse 2.png'
-import circle3 from '@/images/Ellipse 3.png'
-
+import clicle from '@/images/Ellipse 2.png'
 
 export default function Home() {
   return (
@@ -17,13 +14,19 @@ export default function Home() {
       </Head>
 
       <div >
-        {/* <img 
+        <img 
         className='-z-50 absolute'
         src="/Ellipse 3.png" 
         alt="blur" 
         loading='lazy'
-        /> */}
+        />
 
+        <img 
+        className='-z-50 absolute opacity-[70%]'
+        src="/Ellipse 1.png" 
+        alt="blur" 
+        loading='lazy'
+        />
 
         {/* <img 
         className='-z-50 absolute right-0 bottom-0'
@@ -32,23 +35,13 @@ export default function Home() {
         loading='lazy' 
         /> */}
 
-        <Image
-          src={circle3}
-          className='-z-50 absolute top-0'
+        <Image 
+        src={clicle}
+        className='-z-50 absolute right-0 bottom-0'
         />
-
-        <Image
-          src={circle2}
-          className='-z-50 absolute right-0 bottom-0'
-        />
-
-        <Image
-          src={circle1}
-          className='-z-50 absolute left-0 top-0 opacity-70'
-        />
-
+        
         <Landing />
-
+        
       </div>
     </>
   )
