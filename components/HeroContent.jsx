@@ -17,7 +17,7 @@ function HeroContent() {
           <h1>Theekshana</h1>
         </div>
         <div>
-          <h1 className="white-text-shadow text-base font-RobotoMono mt-5 md:text-2xl relative -z-10">
+          <h1 className="glow text-base font-RobotoMono mt-5 md:text-2xl relative -z-10">
             <span>{text}</span>
             <Cursor cursorColor="#ffffff" />
           </h1>
