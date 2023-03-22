@@ -1,9 +1,9 @@
 import Landing from '@/components/Landing'
 import Head from 'next/head'
 import Image from 'next/image'
-import circle1 from '@/images/Ellipse 1.png'
-import circle2 from '@/images/Ellipse 2.png'
-import circle3 from '@/images/Ellipse 3.png'
+import circle1 from '../images/Ellipse 1.png'
+import circle2 from '../images/Ellipse 2.png'
+import circle3 from '../images/Ellipse 3.png'
 
 
 export default function Home() {
@@ -24,7 +24,6 @@ export default function Home() {
         loading='lazy'
         /> */}
 
-
         {/* <img 
         className='-z-50 absolute right-0 bottom-0'
         src="/Ellipse 2.png" 
@@ -32,19 +31,29 @@ export default function Home() {
         loading='lazy' 
         /> */}
 
+        {/* <img 
+        className='-z-50 absolute top-0'
+        src="/Ellipse 1.png" 
+        alt="blur"
+        loading='lazy' 
+        /> */}
+
         <Image
           src={circle3}
           className='-z-50 absolute top-0'
+          loading='lazy'
         />
 
         <Image
           src={circle2}
           className='-z-50 absolute right-0 bottom-0'
+          loading='lazy'
         />
 
         <Image
           src={circle1}
           className='-z-50 absolute left-0 top-0 opacity-70'
+          loading='lazy'
         />
 
         <Landing />
