@@ -1,6 +1,7 @@
 import React from "react";
 import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
 
+const PDF_FILE_URL = '/Wasath Theekshana.pdf'
 
 function HeroContent() {
   const [text, count] = useTypewriter({
@@ -9,6 +10,16 @@ function HeroContent() {
     delaySpeed: 2000,
     deleteSpeed: 80,
   });
+
+  const downloadFile = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  }
 
   return (
     <div className="h-[85vh] flex flex-col justify-center items-center">
@@ -26,11 +37,9 @@ function HeroContent() {
         </div>
 
         <div className="">
-         <a href="/pdf/Wasath Theekshana.pdf" download>
-            <button className="hover:glow hover:bg-white hover:text-black transition duration-500 text-xs font-medium font mt-10 bg-transparent border rounded-lg py-3 px-6">
+            <button onClick={() => {downloadFile(PDF_FILE_URL)}} className="hover:glow hover:bg-white hover:text-black transition duration-500 text-xs font-medium font mt-10 bg-transparent border rounded-lg py-3 px-6">
               Download CV
             </button>
-          </a>
         </div>
       </div>
     </div>
