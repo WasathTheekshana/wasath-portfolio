@@ -6,6 +6,8 @@ import { motion as m } from "framer-motion";
 import aboutMeImg from "@/images/aboutMe-img.png";
 import Link from "next/link";
 
+import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
+
 const PDF_FILE_URL = "/Wasath Theekshana.pdf";
 
 function AboutMeLayout() {
@@ -35,9 +37,9 @@ function AboutMeLayout() {
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut"}}
         >
           <Image
-            className="relative -z-20 opacity-30 md:w-[15rem]"
+            className="relative -z-20 opacity-10 md:w-[15rem]"
             src={aboutMeImg}
-            width={150}
+            width={200}
           />
         </m.div>
         <m.h1
@@ -46,7 +48,8 @@ function AboutMeLayout() {
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           className="glow z-10 absolute font-semibold text-5xl md:text-8xl"
         >
-          aboutMe
+         &lt;aboutMe&#47;&gt;
+         {/* <Cursor cursorColor="#ffffff" /> */}
         </m.h1>
       </div>
 
