@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { motion as m } from "framer-motion";
 
 function MobileNav({ open, setOpen }) {
   return (
+    
     <div
       className={`absolute z-50 flex flex-col justify-center top-0 left-0 h-screen w-screen bg-black/20 backdrop-blur-xl transform ${
         open ? "-translate-y-0" : "-translate-y-full"
@@ -37,7 +39,11 @@ function NavBar() {
   }
 
   return (
-    <div>
+    <m.div
+      initial={{opacity: 0, y: -10}}
+      animate={{opacity: 1, y: 0}}
+      transition={{delay: 0.5, duration: 1, ease: 'easeInOut'}}
+    >
       <nav className="hidden md:flex md:justify-center items-center gap-28 pt-10 text-white/70 font-medium">
         <Link href={"/AboutMe"} className={style.navMenuStyle}>
           aboutMe
@@ -91,7 +97,7 @@ function NavBar() {
           </div>
         </div>
       </nav>
-    </div>
+    </m.div>
   );
 }
 

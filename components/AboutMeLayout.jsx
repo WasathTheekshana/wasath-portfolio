@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import Image from "next/image";
+import { motion as m } from "framer-motion";
 
 import aboutMeImg from "@/images/aboutMe-img.png";
 import Link from "next/link";
@@ -27,24 +28,41 @@ function AboutMeLayout() {
     <div>
       <NavBar />
 
-      <div className="flex justify-center items-center mt-20">
-        <Image
-          className="relative -z-20 opacity-20 md:w-[15rem]"
-          src={aboutMeImg}
-          width={150}
-        />
-        <h1 className="z-10 absolute font-semibold text-5xl md:text-8xl">aboutMe</h1>
+      <div className="flex justify-center items-center mt-20 md:mt-32">
+        <m.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
+        >
+          <Image
+            className="relative -z-20 opacity-30 md:w-[15rem]"
+            src={aboutMeImg}
+            width={150}
+          />
+        </m.div>
+        <m.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
+          className="glow z-10 absolute font-semibold text-5xl md:text-8xl"
+        >
+          aboutMe
+        </m.h1>
       </div>
-
 
       <div className="w-full flex justify-center items-center">
         <div className="mx-7 md:max-w-[70vw]">
-          <div className="mt-20 md:flex justify-between items-center">
+          <m.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
+            className="mt-20 md:flex justify-between items-center"
+          >
             <h1 className={style.aboutMeHeading}>
               Full stack developer, UI/UX <br /> engineer and problem <br />{" "}
               solver.
             </h1>
-            <div className="opacity-75 relative ">
+            <div className="relative ">
               <button
                 onClick={() => {
                   downloadFile(PDF_FILE_URL);
@@ -54,9 +72,13 @@ function AboutMeLayout() {
                 Download CV
               </button>
             </div>
-          </div>
+          </m.div>
 
-          <div>
+          <m.div
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
+          >
             <p className={`${style.aboutMePara}`}>
               I've been programming since I was in grade 6. I still remember the
               day I started watching Java videos. At that moment, I didn't know
@@ -70,9 +92,14 @@ function AboutMeLayout() {
               Algorithms, and I'm still struggling with it. But I know I can do
               it.
             </p>
-          </div>
+          </m.div>
 
-          <div className="md:flex gap-20">
+          <m.div
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
+            className="md:flex gap-20"
+          >
             <div>
               <h2 className={`${style.aboutMeHeading}`}>Experience</h2>
               <p className={style.aboutMePara}>
@@ -88,20 +115,26 @@ function AboutMeLayout() {
                 / Firebase / MongoDB / SQL
               </p>
             </div>
-          </div>
+          </m.div>
 
-          <div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20">
-            <h1 className="font-medium text-3xl">
-              Feel free to <br /> connect with me.
-            </h1>
-            <div className="opacity-75 relative ">
-              <Link href={"/ContactMe"}>
-                <button className="hover:glow hover:bg-white hover:text-black transition duration-500 text-xs md:text-base font-medium font mt-6 md:mt-10 bg-transparent border rounded-lg py-3 px-6">
-                  Contact Me
-                </button>
-              </Link>
-            </div>
-          </div>
+          <m.div
+           initial={{ opacity: 0, y: -10 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
+          >
+            <m.div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20 hover:bg-white hover:text-black transition duration-500 hover:glow">
+              <h1 className="font-medium text-3xl">
+                Feel free to <br /> connect with me.
+              </h1>
+              <div className=" relative ">
+                <Link href={"/ContactMe"}>
+                  <button className="hover:bg-black hover:text-white transition duration-500 text-xs md:text-base font-medium font mt-6 md:mt-10 bg-transparent border rounded-lg py-3 px-6">
+                    Contact Me
+                  </button>
+                </Link>
+              </div>
+            </m.div>
+          </m.div>
         </div>
       </div>
     </div>
