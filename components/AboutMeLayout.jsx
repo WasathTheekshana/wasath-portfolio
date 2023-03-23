@@ -32,7 +32,7 @@ function AboutMeLayout() {
         <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
+          transition={{ delay: 1, duration: 1.5, ease: "easeInOut"}}
         >
           <Image
             className="relative -z-20 opacity-30 md:w-[15rem]"
@@ -122,13 +122,13 @@ function AboutMeLayout() {
            whileInView={{ opacity: 1, y: 0 }}
            transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
           >
-            <m.div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20 hover:bg-white hover:text-black transition duration-500 hover:glow">
+            <m.div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20  transition duration-500 hover:glow">
               <h1 className="font-medium text-3xl">
                 Feel free to <br /> connect with me.
               </h1>
               <div className=" relative ">
                 <Link href={"/ContactMe"}>
-                  <button className="hover:bg-black hover:text-white transition duration-500 text-xs md:text-base font-medium font mt-6 md:mt-10 bg-transparent border rounded-lg py-3 px-6">
+                  <button className="hover:bg-white hover:text-black transition duration-500 text-xs md:text-base font-medium font mt-6 md:mt-10 bg-transparent border rounded-lg py-3 px-6">
                     Contact Me
                   </button>
                 </Link>
