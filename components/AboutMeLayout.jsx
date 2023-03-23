@@ -58,6 +58,7 @@ function AboutMeLayout() {
           <m.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once: true}}
             transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
             className="mt-20 md:flex justify-between items-center"
           >
@@ -80,6 +81,7 @@ function AboutMeLayout() {
           <m.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once: true}}
             transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
           >
             <p className={`${style.aboutMePara}`}>
@@ -100,6 +102,7 @@ function AboutMeLayout() {
           <m.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once: true}}
             transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
             className="md:flex gap-20"
           >
@@ -123,6 +126,7 @@ function AboutMeLayout() {
           <m.div
            initial={{ opacity: 0, y: -10 }}
            whileInView={{ opacity: 1, y: 0 }}
+           viewport={{once: true}}
            transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
           >
             <m.div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20  transition duration-500 hover:glow">
