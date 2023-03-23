@@ -16,27 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div >
-        {/* <img 
-        className='-z-50 absolute'
-        src="/Ellipse 3.png" 
-        alt="blur" 
-        loading='lazy'
-        /> */}
-
-        {/* <img 
-        className='-z-50 absolute right-0 bottom-0'
-        src="/Ellipse 2.png" 
-        alt="blur"
-        loading='lazy' 
-        /> */}
-
-        {/* <img 
-        className='-z-50 absolute top-0'
-        src="/Ellipse 1.png" 
-        alt="blur"
-        loading='lazy' 
-        /> */}
+      <div>
 
         <Image
           src={circle3}
