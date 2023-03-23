@@ -24,9 +24,9 @@ function HeroContent() {
 
   return (
     <m.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
+      transition={{ delay: 1.5, duration: 2.5, ease: "easeInOut" }}
       className="h-[85vh] flex flex-col justify-center items-center"
     >
       <div className="w-fit">
@@ -42,7 +42,11 @@ function HeroContent() {
           </h1>
         </div>
 
-        <div className="relative ">
+        <m.div 
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 2, duration: 2.5, ease: "easeInOut" }}
+        className="relative ">
           <button
             onClick={() => {
               downloadFile(PDF_FILE_URL);
@@ -51,7 +55,7 @@ function HeroContent() {
           >
             Download CV
           </button>
-        </div>
+        </m.div>
       </div>
     </m.div>
   );
