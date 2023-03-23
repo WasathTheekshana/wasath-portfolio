@@ -45,7 +45,7 @@ function HeroContent() {
         <m.div 
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 2, duration: 2.5, ease: "easeInOut" }}
+        transition={{ delay: 1.5, duration: 2.5, ease: "easeInOut" }}
         className="relative ">
           <button
             onClick={() => {
