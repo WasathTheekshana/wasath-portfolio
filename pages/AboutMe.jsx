@@ -1,4 +1,4 @@
-import AboutMeLayout from "@/components/AboutMeLayout";
+import AboutMeLayout from "@/components/Layout/AboutMeLayout";
 import NavBar from "@/components/NavBar";
 import React from "react";
 import Image from "next/image";

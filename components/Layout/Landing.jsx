@@ -1,6 +1,6 @@
 import React from 'react'
-import HeroContent from './HeroContent'
-import NavBar from './NavBar'
+import HeroContent from '../HeroContent'
+import NavBar from '../NavBar'
 
 function Landing() {
   return (

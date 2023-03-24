@@ -1,19 +1,12 @@
 import React from "react";
-import NavBar from "./NavBar";
 import Image from "next/image";
 import { motion as m } from "framer-motion";
-
 import aboutMeImg from "@/images/aboutMe-img.png";
-import aboutMeImg2 from "@/images/aboutMe2.png";
-
-
 import Link from "next/link";
-
-import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
 
 const PDF_FILE_URL = "/Wasath Theekshana.pdf";
 
-function AboutMeLayout() {
+export const AboutMeContent = () => {
   const downloadFile = (url) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
@@ -31,13 +24,11 @@ function AboutMeLayout() {
 
   return (
     <div>
-      <NavBar />
-
       <div className="flex justify-center items-center mt-20 md:mt-32">
         <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 1.5, ease: "easeInOut"}}
+          transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
         >
           <Image
             className="relative -z-20 opacity-20 md:w-[15rem]"
@@ -51,8 +42,7 @@ function AboutMeLayout() {
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           className="glow z-10 absolute font-semibold text-5xl md:text-8xl"
         >
-         &lt;aboutMe&#47;&gt;
-         {/* <Cursor cursorColor="#ffffff" /> */}
+          &lt;aboutMe&#47;&gt;
         </m.h1>
       </div>
 
@@ -61,7 +51,7 @@ function AboutMeLayout() {
           <m.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
             className="mt-20 md:flex justify-between items-center"
           >
@@ -84,7 +74,7 @@ function AboutMeLayout() {
           <m.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
           >
             <p className={`${style.aboutMePara}`}>
@@ -105,7 +95,7 @@ function AboutMeLayout() {
           <m.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
             className="md:flex gap-20"
           >
@@ -127,10 +117,10 @@ function AboutMeLayout() {
           </m.div>
 
           <m.div
-           initial={{ opacity: 0, y: -10 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{once: true}}
-           transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
           >
             <div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20  transition duration-500 hover:glow">
               <h1 className="font-medium text-3xl">
@@ -149,6 +139,4 @@ function AboutMeLayout() {
       </div>
     </div>
   );
-}
-
-export default AboutMeLayout;
+};

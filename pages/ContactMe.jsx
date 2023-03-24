@@ -1,7 +1,7 @@
 import NavBar from '@/components/NavBar'
 import React from 'react'
 import Image from 'next/image';
-import ContactMeLayout from '@/components/ContactMeLayout';
+import ContactMeLayout from '@/components/Layout/ContactMeLayout';
 import {motion as m} from 'framer-motion'
 
 import blueContact from '@/images/blue-contact.png'

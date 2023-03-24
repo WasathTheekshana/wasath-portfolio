@@ -1,4 +1,4 @@
-import Landing from '@/components/Landing'
+import Landing from '@/components/Layout/Landing'
 import Head from 'next/head'
 import Image from 'next/image'
 import circle1 from '../images/Ellipse 1.png'
@@ -18,9 +18,6 @@ export default function Home() {
       </Head>
 
     
-      
-    
-      
       <div>
         <m.div
         initial={{ opacity: 0}}
