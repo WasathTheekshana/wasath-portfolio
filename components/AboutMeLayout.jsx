@@ -4,6 +4,9 @@ import Image from "next/image";
 import { motion as m } from "framer-motion";
 
 import aboutMeImg from "@/images/aboutMe-img.png";
+import aboutMeImg2 from "@/images/aboutMe2.png";
+
+
 import Link from "next/link";
 
 import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
@@ -37,7 +40,7 @@ function AboutMeLayout() {
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut"}}
         >
           <Image
-            className="relative -z-20 opacity-10 md:w-[15rem]"
+            className="relative -z-20 opacity-20 md:w-[15rem]"
             src={aboutMeImg}
             width={200}
           />
@@ -129,7 +132,7 @@ function AboutMeLayout() {
            viewport={{once: true}}
            transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
           >
-            <m.div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20  transition duration-500 hover:glow">
+            <div className="border rounded-lg mt-10 mb-10 px-4 py-6 md:max-w-[40%] md:py-10 md:px-10 md:mt-20  transition duration-500 hover:glow">
               <h1 className="font-medium text-3xl">
                 Feel free to <br /> connect with me.
               </h1>
@@ -140,7 +143,7 @@ function AboutMeLayout() {
                   </button>
                 </Link>
               </div>
-            </m.div>
+            </div>
           </m.div>
         </div>
       </div>

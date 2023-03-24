@@ -26,7 +26,12 @@ function AboutMe() {
         />
         <Image
           src={white1}
-          className="-z-50 absolute top-[30rem] opacity-30 md:opacity-100"
+          className="-z-50 absolute top-[40rem] opacity-30 md:opacity-100"
+          loading="lazy"
+        />
+        <Image
+          src={white1}
+          className="-z-50 absolute -top-[15rem] opacity-100 md:opacity-100"
           loading="lazy"
         />
         <Image
