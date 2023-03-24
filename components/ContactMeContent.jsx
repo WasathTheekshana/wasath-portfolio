@@ -82,33 +82,33 @@ const ContactMeContent = () => {
           whileInView={{ opacity: 1}}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
-          className="bg-white glow w-[90%] rounded-lg opacity-40 md:hidden my-6" />
+          className="w-[90%] rounded-lg md:hidden my-6 "  />
 
           <m.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
-            className="flex gap-5 mt-6"
+            className="flex gap-5 mt-6 justify-center items-center"
           >
             <Link href={"https://www.github.com/WasathTheekshana"}>
-              <Image className="w-6 h-6" src={github} />
+              <Image width={25} src={github} />
             </Link>
 
             <Link href={"https://www.behance.net/wasathvihanga"}>
-              <Image className="w-9 h-6" src={behance} />
+              <Image width={30} src={behance} />
             </Link>
 
             <Link href={"https://www.facebook.com/wasaththeekshana2002"}>
-              <Image className="w-7 h-6" src={facebook} />
+              <Image width={25} src={facebook} />
             </Link>
 
             <Link href={"https://lk.linkedin.com/in/wasatht"}>
-              <Image className="w-6 h-6" src={linkedin} />
+              <Image width={25} src={linkedin} />
             </Link>
 
             <Link href={"https://www.instagram.com/wasath.theekshana"}>
-              <Image className="w-7 h-6" src={insta} />
+              <Image width={25} src={insta} />
             </Link>
           </m.div>
         </div>
