@@ -44,7 +44,7 @@ const ContactMeContent = () => {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[70%] flex flex-col md:flex-row justify-between mb-20 items-center">
+        <div className="w-[90%] md:w-[70%] flex flex-col md:flex-row justify-between mb-20 items-center">
           <div className="mx-7 md:max-w-[70vw]">
             <m.div
               initial={{ opacity: 0, y: -20 }}
@@ -82,7 +82,7 @@ const ContactMeContent = () => {
           whileInView={{ opacity: 1}}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
-          className="bg-white glow w-full rounded-lg opacity-40 md:hidden my-6" />
+          className="bg-white glow w-[90%] rounded-lg opacity-40 md:hidden my-6" />
 
           <m.div
             initial={{ opacity: 0, y: -20 }}
@@ -95,16 +95,20 @@ const ContactMeContent = () => {
               <Image className="w-6 h-6" src={github} />
             </Link>
 
-            <Link href={"https://www.github.com/WasathTheekshana"}>
+            <Link href={"https://www.behance.net/wasathvihanga"}>
               <Image className="w-9 h-6" src={behance} />
             </Link>
 
-            <Link href={"https://www.github.com/WasathTheekshana"}>
+            <Link href={"https://www.facebook.com/wasaththeekshana2002"}>
               <Image className="w-7 h-6" src={facebook} />
             </Link>
 
-            <Link href={"https://www.github.com/WasathTheekshana"}>
+            <Link href={"https://lk.linkedin.com/in/wasatht"}>
               <Image className="w-6 h-6" src={linkedin} />
+            </Link>
+
+            <Link href={"https://www.instagram.com/wasath.theekshana"}>
+              <Image className="w-7 h-6" src={insta} />
             </Link>
           </m.div>
         </div>
