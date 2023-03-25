@@ -43,8 +43,13 @@ export default function Home() {
           />
 
           <Landing />
+
+
         </m.div>
+
       </div>
+
+      
     </>
   )
 }
