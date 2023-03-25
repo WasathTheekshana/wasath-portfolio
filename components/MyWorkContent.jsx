@@ -1,18 +1,14 @@
-import BlogCard from "@/components/BlogCard";
-import { GraphQLClient, gql } from "graphql-request";
+import React from "react";
 import { motion as m } from "framer-motion";
 import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
-import React from "react";
 import Link from "next/link";
 
 
-export default function BlogContent() {
+
+function MyWorkContent() {
+
   const [text, count] = useTypewriter({
-    words: [
-      "Wasath is still writing.",
-      "Calm down!",
-      "He'll be back soon.",
-    ],
+    words: ["Wasath is still working.","Drop a message"],
     loop: true,
     delaySpeed: 2000,
     deleteSpeed: 80,
@@ -38,12 +34,14 @@ export default function BlogContent() {
         transition={{ delay: 1.5, duration: 2.5, ease: "easeInOut" }}
         className="relative "
       >
-        <Link href={'/'}>
+        <Link href={'/ContactMe'}>
           <button className="hover:glow hover:bg-white hover:text-black transition duration-500 text-xs md:text-base font-medium font mt-6 md:mt-10 bg-transparent border rounded-lg py-3 px-6">
-            Back to Home
+            Contact Me
           </button>
         </Link>
       </m.div>
     </div>
   );
 }
+
+export default MyWorkContent;
