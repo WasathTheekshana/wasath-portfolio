@@ -21,7 +21,7 @@ export default function Home() {
       <div>
         <m.div
         initial={{ opacity: 0}}
-        animate={{ opacity: 1.2}}
+        animate={{ opacity: 1}}
         transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
         >
           <Image
